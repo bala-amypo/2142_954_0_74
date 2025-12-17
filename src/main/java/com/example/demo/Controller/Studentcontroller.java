@@ -22,6 +22,6 @@ public class Studclt{
     }
     @putMapping("/Update/{id}")
     public Studententity updateStudent(@PathVariable int id,@RequestBody Studententity st){
-        return ser.update
+        return ser.updateStudent(id,st);
     }
 }

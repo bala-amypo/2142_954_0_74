@@ -20,7 +20,7 @@ public class Studentcontroller{
     public List<Studententity> getAllStudents(){
         return ser.getStudents();
     }
-    @putMapping("/Update/{id}")
+    @PutMapping("/Update/{id}")
     public Studententity updateStudent(@PathVariable int id,@RequestBody Studententity st){
         return ser.updateStudent(id,st);
     }

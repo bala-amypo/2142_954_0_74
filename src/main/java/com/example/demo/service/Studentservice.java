@@ -1,9 +1,9 @@
 package com.example.demo.service;
 import java.util.*;
-import org.springframework.stereotype.service;
+import org.springframework.stereotype.Service;
 import com.example.demo.entity.Studententity;
 
-@service
+@Service
 public class Studentservice{
     private Map<Integer,Studententity>
     details=new HashMap<>();

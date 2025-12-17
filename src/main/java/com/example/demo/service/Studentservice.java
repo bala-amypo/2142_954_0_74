@@ -8,7 +8,7 @@ public class Studentservice{
     private Map<Integer,Studententity>
     details=new HashMap<>();
     public Studententity savedata(Studententity st){
-        details.put(st.getid(),st);
+        details.put(st.getId(),st);
         return st;
     }
     public Studententity getStudent(int id){

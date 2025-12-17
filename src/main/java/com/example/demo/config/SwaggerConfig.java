@@ -10,7 +10,7 @@ import java.util.List;
 public class SwaggerConfig {
 
     @Bean
-    public  SwaggerConfig customOpenAPI() {
+    public  SwaggerConfig SwaggerConfig() {
         return new SwaggerConfig()
                 // You need to change the port as per your server
                 .servers(List.of(

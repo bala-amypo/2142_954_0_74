@@ -4,5 +4,7 @@ import org.springframework.stereotype.service;
 import com.example.demo.entity.Studententity;
 
 @service
-public
+public class Studentservice{
+    
+}
 

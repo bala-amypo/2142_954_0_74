@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
 
 @Service
-public class StudentserviceImpl Implements Studentservice{
+public class StudentserviceImpl implements Studentservice{
     private final Map<Long,Student> store=new HashMap<>();
     private long counter=1;
 
@@ -21,6 +21,10 @@ public class StudentserviceImpl Implements Studentservice{
 
     @Override
     public Optional<Student> getOneStudent(Long id){
-        return Optional.ofNu
+        return Optional.ofNullable(store.get(id));
+    }
+    @Override
+    public void deleteStudent(Long id){
+        store.remove(id);
     }
 }

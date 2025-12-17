@@ -6,6 +6,13 @@ public class Studententity{
     public Studententity(){}
     public Studententity(int id,String name,String email){
         this.id=id;
-        this.
+        this.name=name;
+        this.email=email;
     }
+    public int getId(){return id;}
+    public String getName(){return name;}
+    public String getEmail(){return email;}
+
+    public void setId(int d){this.id=id;}
+    public
 }

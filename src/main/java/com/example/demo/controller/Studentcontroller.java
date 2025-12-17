@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
 @RestController
-public class Studclt{
+public class Studentcontroller{
     @Autowired
     private Studentservice ser;
     @PostMapping("/Postadd")

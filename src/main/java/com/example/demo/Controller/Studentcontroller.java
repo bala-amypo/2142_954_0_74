@@ -12,5 +12,16 @@ public class Studclt{
     public Studententity saveData(@RequestBody Studententity st){
         return ser.saveData(st);
     }
-    @GetMappinh
+    @GetMapping("/Getadd/{id}")
+    public Studententity getStudent(@PathVariable int id){
+        return ser.getStudent(id);
+    }
+    @GetMapping("/GetAll")
+    public List<Studententity> getAllStudents(){
+        return ser.getStudents();
+    }
+    @putMapping("/Update/{id}")
+    public Studententity updateStudent(@PathVariable int id,@RequestBody Studententity st){
+        return ser.update
+    }
 }

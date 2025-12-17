@@ -18,7 +18,13 @@ public class Studentservice{
         return details.values().stream().collect(Collectors.toList());
     }
     public Studententity updateStudent(int id,Studententity st){
-        if(details.containsKey(id))
+        if(details.containsKey(id)){
+            Studententity existing=details.get(id);
+            existing.setName(st.getName());
+            existing.setEmail(st.getEmail());
+            return existing;
+        }
+        return null;
     }
 }
 

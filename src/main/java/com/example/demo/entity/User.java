@@ -64,39 +64,3 @@ public class User {
         this.role = role;
     }
 }
-
-
-
-
-
-
-## 5️⃣ Required Dependency (pom.xml)
-
-**File:** `pom.xml`
-
-```xml
-<dependency>
-    <groupId>org.springframework.security</groupId>
-    <artifactId>spring-security-crypto</artifactId>
-</dependency>
-```
-
----
-
-## ✅ Features Implemented
-
-* Email is **unique**
-* Password stored as **BCrypt hash**
-* Default role set to **USER** if not provided
-* Simple REST API for user registration
-
----
-
-If you want:
-
-* DTO + validation
-* Login API
-* JWT Security
-* MySQL configuration
-
-Just tell me 👍
